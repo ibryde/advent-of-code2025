@@ -20,6 +20,11 @@
         };
       devShell = pkgs.mkShell {
         buildInputs = with pkgs; [
+            gnumake
+            gcc
+            gdb
+            valgrind
+
             cargo
             rustc
             rust-analyzer
